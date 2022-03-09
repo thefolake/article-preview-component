@@ -1,0 +1,120 @@
+html, body, div, p, span, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 733px;
+    flex-direction: row;
+    width: 735px;
+    height: 285px;
+}
+
+.img-drawers {
+    border-radius: 10px 0 0 10px;
+    height: 285px;
+    width: 100%;
+}
+
+.container-content {
+    background: #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    padding: 40px;
+    width: 475px;
+}
+
+h1 {
+    color: hsl(217, 19%, 35%);
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.container-content-text {
+    color: hsl(214, 17%, 51%);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.avatar-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.avatar-section p {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.avatar-section span {
+    color: hsl(214, 17%, 51%);
+    font-size: 13px;
+}
+
+.avatar-section-text {
+    margin-left: -150px;
+}
+
+.share-btn {
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+button {
+    background: none;
+    border: none;
+    display: block;
+    margin: 8px auto;
+    outline: none;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        height: 73vh;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 328px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .container-content {
+        border-radius: 0 0 10px 10px;
+        width: 75%;
+    }
+
+    .img-drawers {
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+    }
+
+    .avatar-section-text {
+        margin-left: 0;
+    }
+}
